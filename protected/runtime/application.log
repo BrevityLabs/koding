@@ -1,0 +1,1817 @@
+2014/12/05 16:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/koding/mapapp/index.php?r=gii
+---
+2014/12/05 16:19:40 [error] [php] Use of undefined constant model - assumed 'model' (C:\wamp\www\koding\mapapp\protected\views\site\index.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(31): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/
+in C:\wamp\www\koding\mapapp\protected\views\site\index.php (13)
+in C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php (31)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/05 16:19:52 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "_form".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\views\site\index.php(13): CController->renderPartial('_form', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(31): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/
+---
+2014/12/05 16:20:29 [error] [php] Undefined variable: model (C:\wamp\www\koding\mapapp\protected\views\site\_form.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\koding\mapapp\protected\views\site\index.php(13): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(31): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/
+in C:\wamp\www\koding\mapapp\protected\views\site\_form.php (13)
+in C:\wamp\www\koding\mapapp\protected\views\site\index.php (13)
+in C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php (31)
+2014/12/05 22:07:35 [error] [php] Undefined variable: model (C:\wamp\www\koding\mapapp\protected\views\site\_form.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\koding\mapapp\protected\views\site\index.php(13): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(31): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/
+in C:\wamp\www\koding\mapapp\protected\views\site\_form.php (13)
+in C:\wamp\www\koding\mapapp\protected\views\site\index.php (13)
+in C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php (31)
+2014/12/06 01:49:35 [error] [php] Undefined variable: model (C:\wamp\www\koding\mapapp\protected\views\site\_form.php:13)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\koding\mapapp\protected\views\site\index.php(13): SiteController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(31): SiteController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/
+in C:\wamp\www\koding\mapapp\protected\views\site\_form.php (13)
+in C:\wamp\www\koding\mapapp\protected\views\site\index.php (13)
+in C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php (31)
+2014/12/06 02:04:35 [error] [php] include(HouseSale.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(30): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php
+in C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php (30)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/06 02:13:04 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "sale/_search".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\views\site\index.php(11): CController->renderPartial('sale/_search')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(30): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php
+---
+2014/12/06 02:13:40 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "sale/index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\views\site\index.php(11): CController->renderPartial('sale/index')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(30): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php
+---
+2014/12/06 02:15:50 [error] [php] Undefined variable: model (C:\wamp\www\koding\mapapp\protected\views\sale\_search.php:15)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#1 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(21): SaleController->renderPartial()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#5 C:\wamp\www\yii\framework\web\CController.php(782): SaleController->renderPartial()
+#6 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(59): SaleController->render()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale
+in C:\wamp\www\koding\mapapp\protected\views\sale\_search.php (15)
+in C:\wamp\www\koding\mapapp\protected\views\sale\index.php (21)
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (59)
+2014/12/06 02:33:50 [error] [php] Undefined index: Sale (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:57)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (57)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/06 02:34:26 [error] [php] Undefined index: Sale (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:57)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (57)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/06 02:36:15 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "sale/index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\views\site\index.php(11): CController->renderPartial('sale/index')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(30): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php/site/index
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 02:36:37 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "sale/index".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\views\site\index.php(11): CController->renderPartial('sale/index')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', NULL, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SiteController.php(30): CController->render('index')
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php
+---
+2014/12/06 02:41:21 [error] [exception.CException] exception 'CException' with message 'SaleController cannot find the requested view "".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(25): CController->renderPartial('')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(64): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index
+---
+2014/12/06 03:20:03 [error] [exception.CException] exception 'CException' with message 'The asset "/koding/mapapp/d3.js/onmap.js" to be published does not exist.' in C:\wamp\www\yii\framework\web\CAssetManager.php:257
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(62): CAssetManager->publish('/koding/mapapp/...')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index
+---
+2014/12/06 03:21:32 [error] [exception.CException] exception 'CException' with message 'The asset "/d3.js/onmap.js" to be published does not exist.' in C:\wamp\www\yii\framework\web\CAssetManager.php:257
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(62): CAssetManager->publish('/d3.js/onmap.js')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index
+---
+2014/12/06 03:22:21 [error] [exception.CException] exception 'CException' with message 'The asset "/koding/mapapp/d3.js/onmap.js" to be published does not exist.' in C:\wamp\www\yii\framework\web\CAssetManager.php:257
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(62): CAssetManager->publish('/koding/mapapp/...')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index
+---
+2014/12/06 03:23:09 [error] [exception.CException] exception 'CException' with message 'The asset "/koding/mapapp/d3.js/onmap.js" to be published does not exist.' in C:\wamp\www\yii\framework\web\CAssetManager.php:257
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(62): CAssetManager->publish('/koding/mapapp/...')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index
+---
+2014/12/06 04:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "counties.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('counties.topojs...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('counties.topojs...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/counties.t...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/counties.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uk.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uk.topojson')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uk.topojson')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/uk.topojso...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/uk.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "counties.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('counties.topojs...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('counties.topojs...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/counties.t...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/counties.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uk.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uk.topojson')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uk.topojson')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/uk.topojso...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/uk.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:41:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "counties.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('counties.topojs...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('counties.topojs...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/counties.t...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/counties.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uk.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uk.topojson')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uk.topojson')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/uk.topojso...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/uk.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uk.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uk.topojson')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uk.topojson')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/uk.topojso...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/uk.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uk.topojson".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('uk.topojson')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('uk.topojson')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/uk.topojso...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/uk.topojson
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 04:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "monthrange.php".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('monthrange.php')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('monthrange.php')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/monthrange...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/monthrange.php
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/06 06:53:02 [error] [php] Undefined variable: list (C:\wamp\www\koding\mapapp\protected\models\Sale.php:146)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#2 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(11): SaleController->renderPartial()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#5 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#6 C:\wamp\www\yii\framework\web\CController.php(782): SaleController->renderPartial()
+#7 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(75): SaleController->render()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#11 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=&Sale%5Bsoldon%5D=&Sale%5Bpcode%5D=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+in C:\wamp\www\koding\mapapp\protected\models\Sale.php (146)
+in C:\wamp\www\koding\mapapp\protected\views\sale\_search.php (24)
+in C:\wamp\www\koding\mapapp\protected\views\sale\index.php (11)
+2014/12/06 07:53:52 [error] [php] Undefined variable: startswith (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:114)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/postCodeMatch
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (114)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/06 08:10:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('postcode')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/postcode')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/postcode
+---
+2014/12/06 08:10:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('postCode')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/postCode')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/postCode
+---
+2014/12/06 08:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "postcde".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('postcde')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('postcde')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/postcde/te...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/postcde/term/se
+---
+2014/12/07 00:32:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=price%3C50000&Sale%5Bsoldon%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/07 00:33:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggregate=count
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=price%3C50000&Sale%5Bsoldon%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/07 01:53:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% GROUP BY county' at line 1. The SQL statement executed was: SELECT county, count(price) as countOfSale FROM `sale` `t` WHERE :price AND ptype = :ptype AND soldon like :soldon% GROUP BY county.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (105)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 01:53:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% GROUP BY county' at line 1. The SQL statement executed was: SELECT county, count(price) as countOfSale FROM `sale` `t` WHERE :price AND ptype = :ptype AND soldon like :soldon% GROUP BY county' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(105): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 01:57:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% GROUP BY county' at line 1. The SQL statement executed was: SELECT county, count(price) as countOfSale FROM `sale` `t` WHERE price = :price AND ptype = :ptype AND soldon like :soldon% GROUP BY county.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (105)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 01:57:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% GROUP BY county' at line 1. The SQL statement executed was: SELECT county, count(price) as countOfSale FROM `sale` `t` WHERE price = :price AND ptype = :ptype AND soldon like :soldon% GROUP BY county' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(105): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 02:01:12 [error] [php] Trying to get property of non-object (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:106)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (106)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 02:01:27 [error] [php] Trying to get property of non-object (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:106)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (106)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 02:03:45 [error] [exception.CException] exception 'CException' with message 'Property "Sale.country" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('country')
+#1 C:\wamp\www\yii\framework\base\CModel.php(596): CActiveRecord->__get('country')
+#2 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(108): CModel->offsetGet('country')
+#3 [internal function]: SaleController->actionQuery('count')
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 02:03:56 [error] [exception.CException] exception 'CException' with message 'Property "Sale.sumOfPrice" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('sumOfPrice')
+#1 C:\wamp\www\yii\framework\base\CModel.php(596): CActiveRecord->__get('sumOfPrice')
+#2 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(108): CModel->offsetGet('sumOfPrice')
+#3 [internal function]: SaleController->actionQuery('count')
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 02:31:26 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "Sale" has an invalid configuration for relation "latlong". It must specify the relation type, the related active record class and the foreign key.' in C:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2410
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2389): CActiveRecordMetaData->addRelation('latlong', Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sale))
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(94): CActiveRecord->__construct()
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 03:06:20 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "Outcode" is not defined in active record class "Sale".' in C:\wamp\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), 'Outcode')
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Sale), 'Outcode')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder('Outcode')
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(106): CActiveRecord->findAll(Object(CDbCriteria))
+#5 [internal function]: SaleController->actionQuery('count')
+#6 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 03:09:16 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "Sale" has an invalid configuration for relation "latlong". It must specify the relation type, the related active record class and the foreign key.' in C:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2410
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2389): CActiveRecordMetaData->addRelation('latlong', Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sale))
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(94): CActiveRecord->__construct()
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 03:10:50 [error] [php] Use of undefined constant outcode - assumed 'outcode' (C:\wamp\www\koding\mapapp\protected\models\Sale.php:67)
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(79): Sale->getMetaData()
+#1 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(94): Sale->__construct()
+#2 unknown(0): SaleController->actionQuery()
+#3 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+in C:\wamp\www\koding\mapapp\protected\models\Sale.php (67)
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (94)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 03:11:09 [error] [exception.CException] exception 'CException' with message 'Property "CHasOneRelation.0" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1998): CComponent->__set('0', Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2408): CBaseActiveRelation->__construct('latlong', 'Outcode', 'outcode', Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2389): CActiveRecordMetaData->addRelation('latlong', Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sale))
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#5 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(94): CActiveRecord->__construct()
+#6 [internal function]: SaleController->actionQuery('count')
+#7 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#19 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 03:24:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sale.pcode' in 'on clause'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(sale.pcode,4)=outcode GROUP BY county.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (106)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 03:24:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sale.pcode' in 'on clause'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(sale.pcode,4)=outcode GROUP BY county' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(106): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 03:27:58 [error] [exception.CException] exception 'CException' with message 'Property "Sale.lat" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lat')
+#1 C:\wamp\www\yii\framework\base\CModel.php(596): CActiveRecord->__get('lat')
+#2 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(113): CModel->offsetGet('lat')
+#3 [internal function]: SaleController->actionQuery('count')
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 06:39:54 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:39:54 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:42:18 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:42:18 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:43:17 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:43:17 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:43:29 [error] [php] Undefined offset: 1 (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:100)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (100)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:43:45 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:43:45 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:43:57 [error] [php] Undefined offset: 1 (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:100)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (100)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:44:15 [error] [php] Undefined offset: 1 (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:100)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (100)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:47:23 [error] [exception.CException] exception 'CException' with message 'Property "SaleController.county" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(125): CComponent->__get('county')
+#1 [internal function]: SaleController->actionQuery('count')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count
+---
+2014/12/07 06:59:08 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:59:08 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 06:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "querySale[price]=0-50000&Sale[soldonLow]=0&Sale[soldonHigh]=0&pcode=&Sale[ptype]=D&Sale[isnew]=Y&Sale[lease]=L&Sale[city]=&Sale[county]=&yt0=Search".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('querySale[price...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('querySale[price...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/querySale[...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/querySale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=0&Sale%5BsoldonHigh%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search?aggr=count
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=0&Sale%5BsoldonHigh%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/07 07:00:47 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:00:47 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:00:51 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:00:51 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:00:51 [error] [php] Trying to get property of non-object (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=0&Sale%5BsoldonHigh%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (103)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:03:15 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:03:15 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:03:15 [error] [php] Trying to get property of non-object (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=0&Sale%5BsoldonHigh%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (103)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:05:09 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:05:09 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:10:11 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:10:11 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:10:11 [error] [exception.CException] exception 'CException' with message 'Property "SaleController.priceHigh" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(119): CComponent->__get('priceHigh')
+#1 [internal function]: SaleController->actionQuery('count')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=0&Sale%5BsoldonHigh%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+---
+2014/12/07 07:10:33 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:10:33 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:13:12 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:13:12 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:13:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE (price<:ycp0) AND (soldon=:ycp1) GROUP BY ecounty.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (132)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:13:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE (price<:ycp0) AND (soldon=:ycp1) GROUP BY ecounty' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(132): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=0&Sale%5BsoldonHigh%5D=0&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+---
+2014/12/07 07:19:25 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:19:25 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:21:02 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:21:02 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:21:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE price<:ycp0 GROUP BY ecounty.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (139)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:21:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE price<:ycp0 GROUP BY ecounty' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(139): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+---
+2014/12/07 07:29:39 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:29:39 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:33:40 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:33:40 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:33:44 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:33:44 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:35:21 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:35:21 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:35:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE price<:ycp0 GROUP BY ecounty.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (139)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:35:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE price<:ycp0 GROUP BY ecounty' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(139): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+---
+2014/12/07 07:37:26 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:37:26 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:37:46 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:37:46 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:38:22 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:38:22 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:40:43 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:40:43 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:40:43 [error] [php] Undefined index: Sale[soldonLow] (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:98)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (98)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:41:06 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:41:06 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:41:06 [error] [php] Undefined index: Sale['soldonLow'] (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:98)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (98)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:42:02 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:42:02 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:42:02 [error] [php] Undefined index: soldonLow (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:98)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (98)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:47:42 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:47:42 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:50:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE ((price<:ycp0) AND (soldon>:ycp1)) AND (soldon<:ycp2) GROUP BY ecounty.
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (146)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 07:50:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ecounty' in 'group statement'. The SQL statement executed was: SELECT county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng FROM `sale` `t` LEFT JOIN outcode ON LEFT(pcode,4)=outcode WHERE ((price<:ycp0) AND (soldon>:ycp1)) AND (soldon<:ycp2) GROUP BY ecounty' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(146): CActiveRecord->findAll(Object(CDbCriteria))
+#4 [internal function]: SaleController->actionQuery('count')
+#5 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SaleController), Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SaleController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&soldonLow=2014-01&soldonHigh=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+---
+2014/12/07 08:08:47 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:08:47 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:09:25 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:09:25 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:11:31 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:11:31 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:12:05 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:12:05 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:12:40 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:12:40 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:14:31 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:14:31 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:16:45 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:16:45 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:16:46 [error] [php] date_format() expects parameter 1 to be DateTime, integer given (C:\wamp\www\koding\mapapp\protected\models\Sale.php:171)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#3 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(11): SaleController->renderPartial()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(782): SaleController->renderPartial()
+#8 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(81): SaleController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=50000-100000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+in C:\wamp\www\koding\mapapp\protected\models\Sale.php (171)
+in C:\wamp\www\koding\mapapp\protected\views\sale\_search.php (24)
+in C:\wamp\www\koding\mapapp\protected\views\sale\index.php (11)
+2014/12/07 08:18:13 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:18:13 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:18:13 [error] [php] Object of class DateTime could not be converted to string (C:\wamp\www\koding\mapapp\protected\models\Sale.php:170)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#2 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(11): SaleController->renderPartial()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): SaleController->renderInternal()
+#5 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#6 C:\wamp\www\yii\framework\web\CController.php(782): SaleController->renderPartial()
+#7 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(81): SaleController->render()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#11 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/index?Sale%5Bprice%5D=50000-100000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+in C:\wamp\www\koding\mapapp\protected\models\Sale.php (170)
+in C:\wamp\www\koding\mapapp\protected\views\sale\_search.php (24)
+in C:\wamp\www\koding\mapapp\protected\views\sale\index.php (11)
+2014/12/07 08:18:30 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:18:30 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:19:53 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:19:53 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:20:03 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:20:03 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:20:23 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:20:23 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:21:06 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:21:06 [warning] [application] Failed to set unsafe attribute "soldonHigh" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (58)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:30:06 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:30:06 [error] [php] Undefined index: soldonLow (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&soldonHigh=2014-02&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (103)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:30:28 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:31:55 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:32:43 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:41:55 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:54:54 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:55:12 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:55:34 [warning] [application] Failed to set unsafe attribute "soldonLow" of "Sale".
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (96)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 08:55:34 [error] [php] Undefined property: Sale::$soldonLow (C:\wamp\www\koding\mapapp\protected\models\Sale.php:48)
+Stack trace:
+#0 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(99): Sale->__get()
+#1 unknown(0): SaleController->actionQuery()
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&soldonHigh=2014-02&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\models\Sale.php (48)
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (99)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 09:10:08 [error] [php] Undefined index: soldonHigh (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:104)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-02&pcode=&Sale%5Bptype%5D=D&Sale%5Bisnew%5D=Y&Sale%5Blease%5D=L&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search&aggr=count
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (104)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 10:26:14 [error] [php] Undefined variable: aggr (C:\wamp\www\koding\mapapp\protected\models\Sale.php:154)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale
+in C:\wamp\www\koding\mapapp\protected\models\Sale.php (154)
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (60)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 10:27:04 [error] [exception.CException] exception 'CException' with message 'Property "Sale.count" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('count')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('count')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Sale), 'count')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1609): CHtml::activeInputField('hidden', Object(Sale), 'count', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(756): CHtml::activeHiddenField(Object(Sale), 'count', Array)
+#5 C:\wamp\www\koding\mapapp\protected\views\sale\_search.php(14): CActiveForm->hiddenField(Object(Sale), 'count', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#9 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(6): CController->renderPartial('_search', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#14 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(89): CController->render('index', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale
+---
+2014/12/07 10:38:34 [error] [php] Trying to get property of non-object (C:\wamp\www\koding\mapapp\protected\views\sale\index.php:9)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SaleController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SaleController->renderPartial()
+#2 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(84): SaleController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/index?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-02&pcode=&Sale%5Bptype%5D=0&Sale%5Bisnew%5D=0&Sale%5Blease%5D=0&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+in C:\wamp\www\koding\mapapp\protected\views\sale\index.php (9)
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (84)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 11:01:41 [error] [exception.CException] exception 'CException' with message 'Property "Sale.aggregateType" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('aggregateType')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('aggregateType')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1953): CHtml::resolveValue(Object(Sale), 'aggregateType')
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(895): CHtml::activeRadioButtonList(Object(Sale), 'aggregateType', Array, Array)
+#4 C:\wamp\www\koding\mapapp\protected\views\sale\_search.php(66): CActiveForm->radioButtonList(Object(Sale), 'aggregateType', Array)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#8 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(5): CController->renderPartial('_search', Array)
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#13 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(84): CController->render('index', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#15 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-06&pcode=&Sale%5Bptype%5D=0&Sale%5Bisnew%5D=0&Sale%5Blease%5D=0&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-02&pcode=&Sale%5Bptype%5D=0&Sale%5Bisnew%5D=0&Sale%5Blease%5D=0&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/07 11:02:22 [error] [exception.CException] exception 'CException' with message 'Property "Sale.aggregateType" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('aggregateType')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('aggregateType')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1953): CHtml::resolveValue(Object(Sale), 'aggregateType')
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(895): CHtml::activeRadioButtonList(Object(Sale), 'aggregateType', Array, Array)
+#4 C:\wamp\www\koding\mapapp\protected\views\sale\_search.php(66): CActiveForm->radioButtonList(Object(Sale), 'aggregateType', Array)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#8 C:\wamp\www\koding\mapapp\protected\views\sale\index.php(5): CController->renderPartial('_search', Array)
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\kod...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\kod...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\kod...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#13 C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php(84): CController->render('index', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SaleController->actionIndex()
+#15 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/index')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/index?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-06&pcode=&Sale%5Bptype%5D=0&Sale%5Bisnew%5D=0&Sale%5Blease%5D=0&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale/index?aggr=count&Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-02&pcode=&Sale%5Bptype%5D=0&Sale%5Bisnew%5D=0&Sale%5Blease%5D=0&Sale%5Bcity%5D=&Sale%5Bcounty%5D=&yt0=Search
+---
+2014/12/07 11:23:22 [error] [php] Undefined variable: resultset (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:76)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (76)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 11:25:06 [error] [php] Undefined variable: model (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:77)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (77)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 13:37:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query?
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale
+---
+2014/12/07 13:53:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query
+HTTP_REFERER=http://localhost:8080/koding/mapapp/index.php/sale
+---
+2014/12/07 13:54:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('query')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sale/query')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\koding\mapapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/koding/mapapp/index.php/sale/query
+---
+2014/12/07 14:31:37 [error] [php] Undefined index: aggr (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:88)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&Sale%5Bcity%5D=&Sale%5Bcounty%5D=
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (88)
+in C:\wamp\www\koding\mapapp\index.php (13)
+2014/12/07 14:32:22 [error] [php] Undefined index: aggr (C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php:88)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): SaleController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): SaleController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SaleController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SaleController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\koding\mapapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/koding/mapapp/index.php/sale/query?Sale%5Bprice%5D=0-50000&Sale%5BsoldonLow%5D=2014-01&Sale%5BsoldonHigh%5D=2014-01&Sale%5Bcity%5D=&Sale%5Bcounty%5D=
+in C:\wamp\www\koding\mapapp\protected\controllers\SaleController.php (88)
+in C:\wamp\www\koding\mapapp\index.php (13)

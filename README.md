@@ -1,4 +1,3 @@
-koding
-======
+UK/Ireland Housing Analysis
 
-Application developed for Koding Hackathon 2014
+Due to migrating population across EU there are housing challenges created within UK and Ireland. This puts and additional pressure on the urban planners to come up with housing solutions, especially the social housing. This app provides several visualization on housing situations across UK and Ireland. It also correlates the housing situation with employment and demographics (stage 2).
