@@ -26,7 +26,8 @@ class Sale extends CActiveRecord
 	 * The following properties are set because CDBCriteria would not return aggregates unless they are part of the model
 	 */
 	public $countOfSale;		// equivalent to COUNT(*)
-	public $sumOfPrice;			// equivalent to SUM(price)
+	public $averagePrice;		// equivalent to AVG(price)
+	public $highestPrice;
 	public $lat;
 	public $lng;
 	
@@ -37,7 +38,7 @@ class Sale extends CActiveRecord
 	public $priceHigh;
 	public $postcodeLow;
 	public $postcodeHigh;
-	private $soldonLow;	//<<< note it is private
+	private $soldonLow;	
 	private $soldonHigh;
 	private $aggregateType;
 	
@@ -137,64 +138,63 @@ class Sale extends CActiveRecord
 	 * @return CActiveDataProvider the data provider that can return the models
 	 * based on the search/filter conditions.
 	 */
-	public function search($aggr)
+	public function search()
 	{
-		if(isset($_GET['Sale']))
-			$this->attributes=$_GET['Sale'];
+// 		if(isset($_GET['Sale']))
+// 			$this->attributes=$_GET['Sale'];
 		
-		if($this->price == null){
-			//echo $model->price;
-		} else {
-			//echo $model->price;
-			$priceRange = explode("-",$this->price);
-			if(count($priceRange) != 2){
-				//echo print_r($priceRange);
-			} else {
-				$this->priceLow = $priceRange[0];
-				$this->priceHigh = $priceRange[1];
-				//echo print_r($priceRange);
-			}
-		}
+// 		if($this->price == null){
+// 			//echo $model->price;
+// 		} else {
+// 			//echo $model->price;
+// 			$priceRange = explode("-",$this->price);
+// 			if(count($priceRange) != 2){
+// 				//echo print_r($priceRange);
+// 			} else {
+// 				$this->priceLow = $priceRange[0];
+// 				$this->priceHigh = $priceRange[1];
+// 				//echo print_r($priceRange);
+// 			}
+// 		}
 		
-		if($aggr == 'count'){
-			$criteria = new CDbCriteria;
-			$criteria->select = "county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng";
-				
-			if($this->priceLow != 0)
-				$criteria->compare('price','>'.$this->priceLow,true);
-			if($this->priceHigh != 0)
-				$criteria->compare('price','<'.$this->priceHigh,true);
-				
-			if($this->soldonLow != null)
-				$criteria->compare('soldon','>='.$this->soldonLow,true);
-			if($this->soldonHigh != null)
-				$criteria->compare('soldon','<='.$this->soldonHigh,true);
-			//			$criteria->compare('soldon','<2014-01',false);
-			// 			$criteria->compare('pcode',$model->pcode,true);
-			// 			$criteria->compare('ptype',$model->ptype,true);
-			// 			$criteria->compare('isnew',$model->isnew,true);
-			// 			$criteria->compare('lease',$model->lease,true);
-				
-			$criteria->join = "LEFT JOIN outcode ON LEFT(pcode,4)=outcode";
-			$criteria->compare('county',$this->county,true);
-			$criteria->limit = 100;
-			//$criteria->params = array(":price"=> $model->price, ":ptype"=>$model->ptype, ":soldon"=>$model->soldon);
-			$criteria->group = "county";
-				
-			$recs = $this->findAll($criteria);
-			$outputArray = [];
-			foreach($recs as $rec){
-				array_push($outputArray, (object)array(
-				'county'=>$rec['county'],
-				'sumOfPrice'=>$rec['sumOfPrice'],
-				'countOfSale'=>$rec['countOfSale'],
-				'lat'=>$rec['lat'],
-				'lng'=>$rec['lng'],
-				));
-			}
-			//echo CJSON::encode($outputArray);
-			return $outputArray;
-		}
+// 		$criteria = new CDbCriteria;
+// 		$criteria->select = "county, MAX(price) as highestPrice, AVG(price) as averagePrice, COUNT(price) as countOfSale, lat, lng";
+			
+// 		if($this->priceLow != 0)
+// 			$criteria->compare('price','>'.$this->priceLow,true);
+// 		if($this->priceHigh != 0)
+// 			$criteria->compare('price','<'.$this->priceHigh,true);
+			
+// 		if($this->soldonLow != null)
+// 			$criteria->compare('soldon','>='.$this->soldonLow,true);
+// 		if($this->soldonHigh != null)
+// 			$criteria->compare('soldon','<='.$this->soldonHigh,true);
+// 		//			$criteria->compare('soldon','<2014-01',false);
+// 		// 			$criteria->compare('pcode',$model->pcode,true);
+// 		// 			$criteria->compare('ptype',$model->ptype,true);
+// 		// 			$criteria->compare('isnew',$model->isnew,true);
+// 		// 			$criteria->compare('lease',$model->lease,true);
+			
+// 		$criteria->join = "LEFT JOIN outcode ON LEFT(pcode,4)=outcode";
+// 		$criteria->compare('county',$this->county,true);
+// 		//$criteria->limit = 100;
+// 		//$criteria->params = array(":price"=> $model->price, ":ptype"=>$model->ptype, ":soldon"=>$model->soldon);
+// 		$criteria->group = "county";
+			
+// 		$recs = $this->findAll($criteria);
+// 		$outputArray = [];
+// 		foreach($recs as $rec){
+// 			array_push($outputArray, (object)array(
+// 				'county' => $rec['county'],
+// 		  'averagePrice' => $rec['averagePrice'],
+// 		  'highestPrice' => $rec['highestPrice'],
+// 		   'countOfSale' => $rec['countOfSale'],
+// 				   'lat' => $rec['lat'],
+// 				   'lng' => $rec['lng'],
+// 			));
+// 		}
+// 		//echo CJSON::encode($outputArray);
+// 		return $outputArray;
 	}
 
 	/**
@@ -217,7 +217,7 @@ class Sale extends CActiveRecord
 		foreach($list as $item)
 			$rs[$item['mnth']]=$item['mnth'];
 		//add one more item
-		$myDate = new DateTime($item['mnth'] . '-01');
+		$myDate = new DateTime($item['mnth'] . '-01', new DateTimeZone('America/Los_Angeles'));
 		$myDate->add(new DateInterval('P1M'));
 		$strMyDate = date_format($myDate, "Y-m");
 		$rs[$strMyDate]=$strMyDate;

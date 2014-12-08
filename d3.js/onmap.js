@@ -3,7 +3,9 @@ var map_tag,
 	path,
 	arrPostCodes = [],
 	jsonpipe = [],
-	formData;
+	formData,
+	factor = 1,
+	aggrType;
 
 var width = 900,
 	height = 700;
@@ -47,7 +49,27 @@ $(document).ready(function() {
 				.remove();				        
 		}
 	});
+
+
+	$("table").on('click', ':button', function (){
+		if($(this).is(":button[name='dec']"))
+			factor -= factor>2? 2 : 0;
+		else if($(this).is(":button[name='inc']"))
+			factor += factor<100? 2 : 0;
+			
+		var xx = svg.selectAll("circle").data(jsonpipe);
+
+		if(aggrType == 'count'){	
+			xx.attr("r", function(d) { return factor * d.countOfSale;});
+		} else if(aggrType == 'maximum'){
+			xx.attr("r", function(d) { return factor * d.highestPrice;});
+		} else if(aggrType == 'average'){
+			xx.attr("r", function(d) { return factor * d.averagePrice;});
+		}
+
+	});
 	
+
 	// Call the default view once the search action is taken
 	$("select").change(function (){
 		getGoing('count');
@@ -69,11 +91,12 @@ $(document).ready(function() {
  * The processing unit upon user selecting all the parameters. It checks the options user has selected and processes
  * accordingly, viz, the selected display parameters and the aggregate function.
  */
-function getGoing(aggrType){
+function getGoing(aggr){
 	
-	if(aggrType == null) attrType = 'count';
+	if(aggr == null) aggr = 'count';
+	aggrType = aggr;
 	
-	jsonpipe = [];	//re-initializing jsonpipe
+	jsonpipe = [];				//re-initializing jsonpipe
 	
 	clearCircles();				//removing earlier circles
 	
@@ -89,12 +112,10 @@ function getGoing(aggrType){
 		'Sale[county]'		: $('input[name=Sale\\[county\\]]').val(),
 	   'Sale[aggregateType]': $('select[name=Sale\\[aggregateType\\]').val(),
 	 };
-
-	//console.log(formData);
 	
 	$.ajax({
 		type: 'GET',
-		url: '/koding/mapapp/index.php/sale/query', //?' + window.location.search.substring(1),	// following the pattern of (controller/action)
+		url: '/koding/index.php/sale/query', // following the pattern of (controller/action)
 		data: formData,
 		dataType: 'json',
 		success: function (result) {
@@ -106,56 +127,9 @@ function getGoing(aggrType){
 			//console.log(JSON.stringify(jsonpipe));
 		},
 		complete: function (result) {
-			overlayCountOfSale();
+			overlayAggregates(aggr);
 		}
 	});
-
-//	} else if(plotType == "one_month"){
-//		jsonpipe = [];
-//		var temp = $("#pmonth").val();
-////		var month = parseInt(temp.substring(5, 7));
-////		var year  = parseInt(temp.substring(0, 4));
-//		$.ajax({
-//			type: 'GET',
-//			url: 'duration.php',
-//			data: {"pmonth": temp, "aggregate": aggregate},	//temp format - YYYY-DD; the webservice will suffix 01 and 30/31
-//			dataType: 'json',
-//			success: function (result) {
-//				for(var i=0; i<result.length; i++){
-//				//if(jsonpipe.length > 100) jsonpipe.shift();
-//					console.log(result[i]);
-//					jsonpipe.push(result[i]);
-//				}
-//				//console.log("reading data "+tick);
-//			},
-//			complete: function (result) {
-//				showPlots(jsonpipe);
-//			}
-//		});			
-//	} else if(plotType == "month_range") {
-//		jsonpipe = [];
-//		var temp1 = $("#pmonth1").val();
-//		var temp2 = $("#pmonth2").val();
-//		$.ajax({
-//			type: 'GET',
-//			url: 'duration.php',
-//			data: {pmonth1: temp1, pmonth2: temp2, aggregate: aggregate},	//temp format - YYYY-DD; the webservice will suffix 01 and 30/31
-//			dataType: 'json',
-//			success: function (result) {
-//				for(var i=0; i<result.length; i++){
-//				//if(jsonpipe.length > 100) jsonpipe.shift();
-//					jsonpipe.push(result[i]);
-//				}
-//				//console.log("reading data "+tick);
-//			},
-//			complete: function (result) {
-//				// overlayPostcodes();
-//				document.write(JSON.stringify(result));
-//			}
-//		});
-//	} else if(plotType == "price_range") {
-//	} else {	//area_codes
-//	}
 }	
 
 
@@ -206,20 +180,30 @@ function clearCircles(){
 		.remove();
 }
 
-function overlayCountOfSale(){
+function overlayAggregates(lAggrType){
 		
-	svg.selectAll("circle")
+	var xx = svg.selectAll("circle")
 		.data(jsonpipe)
 		.enter().append("circle")
 			.attr("cx", function(d) { return projection([d.lng, d.lat])[0];})
 			.attr("cy", function(d) { return projection([d.lng, d.lat])[1];})
 			.attr("r", 25)
 			.style("stroke", "green")
-			.style("fill", "lightyellow")
-		.transition()
-			.duration(1000)
-			.attr("r", function(d) { return d.countOfSale;})
-	;
+			.style("fill", "lightyellow");
+	
+	if(lAggrType == 'count'){	
+		xx.transition()
+		.duration(1000)
+		.attr("r", function(d) { return d.countOfSale;});
+	} else if(lAggrType == 'maximum'){
+		xx.transition()
+		.duration(1000)
+		.attr("r", function(d) { return d.highestPrice;});
+	} else if(lAggrType == 'average'){
+		xx.transition()
+		.duration(1000)
+		.attr("r", function(d) { return d.averagePrice;});
+	}
 }
 
 

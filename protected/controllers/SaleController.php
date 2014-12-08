@@ -100,9 +100,8 @@ class SaleController extends Controller
 			}
 		}
 
-		if($model->aggregateType == 'count'){
 			$criteria = new CDbCriteria;
-			$criteria->select = "county, SUM(price) as sumOfPrice, COUNT(price) as countOfSale, lat, lng";
+			$criteria->select = "county, MAX(price) as highestPrice, AVG(price) as averagePrice, COUNT(price) as countOfSale, lat, lng";
 			
 			if($model->priceLow != 0)
 				$criteria->compare('price','>'.$model->priceLow,true);
@@ -129,15 +128,15 @@ class SaleController extends Controller
 			$outputArray = [];
 			foreach($recs as $rec){
 				array_push($outputArray, (object)array(
-					'county'=>$rec['county'],
-					'sumOfPrice'=>$rec['sumOfPrice'],
-					'countOfSale'=>$rec['countOfSale'],
-					'lat'=>$rec['lat'],
-					'lng'=>$rec['lng'],
+					'county' => $rec['county'],
+			  'averagePrice' => $rec['averagePrice'],
+			  'highestPrice' => $rec['highestPrice'],
+			   'countOfSale' => $rec['countOfSale'],
+					   'lat' => $rec['lat'],
+					   'lng' => $rec['lng'],
 				));
 			}
 			echo CJSON::encode($outputArray);
-		}
 	}		
 	
 	/**
